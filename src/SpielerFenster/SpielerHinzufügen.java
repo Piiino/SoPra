@@ -59,13 +59,13 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
 
         jButton1.setText("Anmelden");
 
-        jCheckBox1.setText("jCheckBox1");
+        jCheckBox1.setText("Game of Thrones");
 
-        jCheckBox2.setText("jCheckBox2");
+        jCheckBox2.setText("Android Netrunner");
 
-        jCheckBox3.setText("jCheckBox3");
+        jCheckBox3.setText("Lord of War");
 
-        jCheckBox4.setText("jCheckBox4");
+        jCheckBox4.setText("X-Wing");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,13 +86,13 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
                     .addComponent(jTextField3)
                     .addComponent(jTextField4)
                     .addComponent(jComboBox1, 0, 100, Short.MAX_VALUE))
-                .addGap(129, 129, 129)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(137, 137, 137)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jCheckBox1)
                     .addComponent(jCheckBox2)
                     .addComponent(jCheckBox3)
                     .addComponent(jCheckBox4))
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)

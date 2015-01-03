@@ -28,13 +28,13 @@
           <Group type="102" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButton3" pref="115" max="32767" attributes="0"/>
+                  <Component id="Spielregeln" pref="115" max="32767" attributes="0"/>
                   <Component id="SpielerButton" max="32767" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="GebannteSpieler" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
@@ -44,7 +44,7 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="GebannteKarten" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -105,10 +105,10 @@
               <EmptySpace pref="89" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
-                      <Component id="jButton2" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
+                      <Component id="GebannteSpieler" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
+                      <Component id="GebannteKarten" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton3" min="-2" pref="85" max="-2" attributes="0"/>
+                  <Component id="Spielregeln" min="-2" pref="85" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
           </Group>
@@ -181,17 +181,17 @@
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="GebannteSpieler">
       <Properties>
         <Property name="text" type="java.lang.String" value="Gebannte Spieler"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="GebannteKarten">
       <Properties>
         <Property name="text" type="java.lang.String" value="Gebannte Karten"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="Spielregeln">
       <Properties>
         <Property name="text" type="java.lang.String" value="Spielregeln"/>
       </Properties>

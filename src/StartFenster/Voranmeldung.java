@@ -31,8 +31,8 @@ public class Voranmeldung extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        Gezahlt = new javax.swing.JCheckBox();
         BestätigenButton = new javax.swing.JButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -48,14 +48,14 @@ public class Voranmeldung extends javax.swing.JFrame {
 
         jLabel5.setText("Geschlecht");
 
+        Gezahlt.setText("Gezahlt");
+
         BestätigenButton.setText("Bestätigen");
         BestätigenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BestätigenButtonActionPerformed(evt);
             }
         });
-
-        jCheckBox1.setText("Gezahlt");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,13 +76,15 @@ public class Voranmeldung extends javax.swing.JFrame {
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox1)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(Name, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
                         .addComponent(Vorname)
                         .addComponent(Nickname)
                         .addComponent(Mail))
-                    .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Gezahlt)))
                 .addGap(233, 233, 233))
         );
         layout.setVerticalGroup(
@@ -109,10 +111,9 @@ public class Voranmeldung extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(1, 1, 1)
-                .addComponent(jCheckBox1)
-                .addGap(18, 18, 18)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Gezahlt))
+                .addGap(42, 42, 42)
                 .addComponent(BestätigenButton)
                 .addGap(37, 37, 37))
         );
@@ -129,7 +130,7 @@ public class Voranmeldung extends javax.swing.JFrame {
         
         
         DBClass DB = new DBClass();
-        DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Name.getText(), Mail.getText(), Gender.getSelectedItem());
+        DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Name.getText(), Mail.getText(), Gender.getSelectedItem(), Gezahlt.isSelected());
          
         
         
@@ -173,11 +174,11 @@ public class Voranmeldung extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BestätigenButton;
     private javax.swing.JComboBox Gender;
+    private javax.swing.JCheckBox Gezahlt;
     private javax.swing.JTextField Mail;
     private javax.swing.JTextField Name;
     private javax.swing.JTextField Nickname;
     private javax.swing.JTextField Vorname;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

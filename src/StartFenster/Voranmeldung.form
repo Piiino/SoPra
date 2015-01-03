@@ -43,14 +43,17 @@
               </Group>
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                       <Component id="Name" pref="146" max="32767" attributes="0"/>
                       <Component id="Vorname" max="32767" attributes="0"/>
                       <Component id="Nickname" max="32767" attributes="0"/>
                       <Component id="Mail" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="Gender" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Gender" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="Gezahlt" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
           </Group>
@@ -86,10 +89,9 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Gender" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="Gezahlt" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-              <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Component id="BestätigenButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
           </Group>
@@ -140,6 +142,11 @@
         <Property name="text" type="java.lang.String" value="Geschlecht"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JCheckBox" name="Gezahlt">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gezahlt"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JButton" name="Best&#xe4;tigenButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Best&#xe4;tigen"/>
@@ -147,11 +154,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Best&#xe4;tigenButtonActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gezahlt"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

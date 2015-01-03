@@ -123,7 +123,8 @@ public class Event extends javax.swing.JFrame {
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(416, 338));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

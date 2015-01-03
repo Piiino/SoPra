@@ -130,7 +130,8 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
                 .addGap(47, 47, 47))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(491, 353));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

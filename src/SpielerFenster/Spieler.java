@@ -137,7 +137,8 @@ public class Spieler extends javax.swing.JFrame {
                 .addContainerGap(52, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(907, 442));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

@@ -126,10 +126,10 @@ public class Voranmeldung extends javax.swing.JFrame {
      * @param evt 
      */
     private void BestätigenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BestätigenButtonActionPerformed
-        /**
-         * DBClass DB = new DBClass();
-         * DB.WriteGamerToDatabase (Vorname.getText(), Nickname.getText(), Name.getText(), Mail.getText(), Gender.getSelectedItem());
-         */
+        
+        DBClass DB = new DBClass();
+        DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Name.getText(), Mail.getText(), Gender.getSelectedItem());
+         
         
         
     }//GEN-LAST:event_BestätigenButtonActionPerformed

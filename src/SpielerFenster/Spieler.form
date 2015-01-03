@@ -143,8 +143,8 @@
                 <Column editable="false" title="Nickname" type="java.lang.String"/>
                 <Column editable="false" title="Punktzahl" type="java.lang.String"/>
                 <Column editable="false" title="Win/Lose" type="java.lang.String"/>
-                <Column editable="false" title="Anwesenheit" type="java.lang.Boolean"/>
-                <Column editable="false" title="Bezahlt" type="java.lang.Boolean"/>
+                <Column editable="true" title="Anwesenheit" type="java.lang.Boolean"/>
+                <Column editable="true" title="Bezahlt" type="java.lang.Boolean"/>
                 <Column editable="false" title="E-Mail Adresse" type="java.lang.String"/>
               </Table>
             </Property>

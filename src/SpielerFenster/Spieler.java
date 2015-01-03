@@ -26,13 +26,13 @@ public class Spieler extends javax.swing.JFrame {
 
         SpielerBearbeitenButton = new javax.swing.JButton();
         SpielerHinzufügenButton = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        Exportieren = new javax.swing.JButton();
+        ListeAnzeigen = new javax.swing.JButton();
+        ListeChecken = new javax.swing.JButton();
+        SpielerSuchen = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        SpielerTabelle = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -50,22 +50,22 @@ public class Spieler extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Spielerliste exportieren");
+        Exportieren.setText("Spielerliste exportieren");
 
-        jButton4.setText("Spielerliste anzeigen");
+        ListeAnzeigen.setText("Spielerliste anzeigen");
 
-        jButton5.setText("Spielerliste prüfen");
+        ListeChecken.setText("Spielerliste prüfen");
 
-        jTextField1.setText("Spieler suchen");
-        jTextField1.setToolTipText("");
-        jTextField1.setOpaque(false);
+        SpielerSuchen.setText("Spieler suchen");
+        SpielerSuchen.setToolTipText("");
+        SpielerSuchen.setOpaque(false);
 
         jLabel1.setFont(new java.awt.Font("Tele-Marines", 3, 19)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Spieler");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        SpielerTabelle.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null}
@@ -89,7 +89,7 @@ public class Spieler extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(SpielerTabelle);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,12 +100,12 @@ public class Spieler extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Exportieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(SpielerHinzufügenButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(SpielerBearbeitenButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1))
+                    .addComponent(ListeAnzeigen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ListeChecken, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(SpielerSuchen))
                 .addGap(0, 29, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -120,17 +120,17 @@ public class Spieler extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(59, 59, 59)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(SpielerSuchen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(SpielerBearbeitenButton)
                         .addGap(18, 18, 18)
                         .addComponent(SpielerHinzufügenButton)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(Exportieren)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4)
+                        .addComponent(ListeAnzeigen)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5))
+                        .addComponent(ListeChecken))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -195,14 +195,14 @@ public class Spieler extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Exportieren;
+    private javax.swing.JButton ListeAnzeigen;
+    private javax.swing.JButton ListeChecken;
     private javax.swing.JButton SpielerBearbeitenButton;
     private javax.swing.JButton SpielerHinzufügenButton;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JTextField SpielerSuchen;
+    private javax.swing.JTable SpielerTabelle;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

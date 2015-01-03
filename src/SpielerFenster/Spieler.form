@@ -30,12 +30,12 @@
               <Component id="jScrollPane1" min="-2" pref="720" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButton3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="Exportieren" alignment="0" max="32767" attributes="0"/>
                   <Component id="SpielerHinzufügenButton" alignment="0" max="32767" attributes="0"/>
                   <Component id="SpielerBearbeitenButton" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jButton4" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jButton5" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ListeAnzeigen" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ListeChecken" alignment="0" max="32767" attributes="0"/>
+                  <Component id="SpielerSuchen" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="29" max="32767" attributes="0"/>
           </Group>
@@ -54,17 +54,17 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                      <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SpielerSuchen" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="SpielerBearbeitenButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="SpielerHinzufügenButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Exportieren" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                      <Component id="ListeAnzeigen" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                      <Component id="ListeChecken" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -93,22 +93,22 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SpielerHinzuf&#xfc;genButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="Exportieren">
       <Properties>
         <Property name="text" type="java.lang.String" value="Spielerliste exportieren"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="ListeAnzeigen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Spielerliste anzeigen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="ListeChecken">
       <Properties>
         <Property name="text" type="java.lang.String" value="Spielerliste pr&#xfc;fen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="SpielerSuchen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Spieler suchen"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -134,7 +134,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="jTable1">
+        <Component class="javax.swing.JTable" name="SpielerTabelle">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="8" rowCount="2">

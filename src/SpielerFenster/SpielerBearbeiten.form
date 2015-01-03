@@ -36,13 +36,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="DoneButton" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                      <Component id="Geschlecht" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -70,17 +70,17 @@
                   </Group>
               </Group>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="jTextField4" pref="99" max="32767" attributes="0"/>
-                  <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField3" alignment="1" max="32767" attributes="0"/>
-                  <Component id="jTextField1" alignment="1" max="32767" attributes="0"/>
+                  <Component id="Nickname" pref="99" max="32767" attributes="0"/>
+                  <Component id="Mail" alignment="0" max="32767" attributes="0"/>
+                  <Component id="Nachname" alignment="1" max="32767" attributes="0"/>
+                  <Component id="Vorname" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jCheckBox2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jCheckBox1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox3" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jCheckBox4" alignment="0" max="32767" attributes="0"/>
+                  <Component id="AN" alignment="0" max="32767" attributes="0"/>
+                  <Component id="GoT" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LoW" alignment="0" max="32767" attributes="0"/>
+                  <Component id="StarWars" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
           </Group>
@@ -92,41 +92,41 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Vorname" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="GoT" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Nachname" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AN" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Nickname" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LoW" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Mail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="StarWars" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Geschlecht" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="38" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="DoneButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="DoneButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Done"/>
       </Properties>
@@ -156,15 +156,15 @@
         <Property name="text" type="java.lang.String" value="Geschlecht"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="Vorname">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="Nachname">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="Nickname">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="Mail">
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
+    <Component class="javax.swing.JComboBox" name="Geschlecht">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="2">
@@ -174,25 +174,25 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+    <Component class="javax.swing.JCheckBox" name="GoT">
       <Properties>
         <Property name="text" type="java.lang.String" value="Game of Thrones"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GoTActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+    <Component class="javax.swing.JCheckBox" name="AN">
       <Properties>
         <Property name="text" type="java.lang.String" value="Android Netrunner"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+    <Component class="javax.swing.JCheckBox" name="LoW">
       <Properties>
         <Property name="text" type="java.lang.String" value="Lords of War"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+    <Component class="javax.swing.JCheckBox" name="StarWars">
       <Properties>
         <Property name="text" type="java.lang.String" value="X-Wing"/>
       </Properties>

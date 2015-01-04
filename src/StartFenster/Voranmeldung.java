@@ -56,7 +56,7 @@ public class Voranmeldung extends javax.swing.JFrame {
             }
         });
 
-        BestätigenButton.setText("Bestätigen");
+        BestätigenButton.setText("Anmelden");
         BestätigenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BestätigenButtonActionPerformed(evt);
@@ -97,7 +97,7 @@ public class Voranmeldung extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(103, 103, 103)
                         .addComponent(BestätigenButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                         .addComponent(AbbrechenButton)))
                 .addGap(0, 93, Short.MAX_VALUE))
         );

@@ -52,7 +52,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                       <Component id="BestätigenButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="55" max="32767" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
                       <Component id="AbbrechenButton" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -155,7 +155,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="Best&#xe4;tigenButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Best&#xe4;tigen"/>
+        <Property name="text" type="java.lang.String" value="Anmelden"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Best&#xe4;tigenButtonActionPerformed"/>

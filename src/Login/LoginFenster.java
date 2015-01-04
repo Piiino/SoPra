@@ -2,6 +2,7 @@
 package Login;
 
 import HauptFenster.Hauptmenu;
+import databaseController.CTMData;
 
 /**
  *
@@ -88,14 +89,11 @@ public class LoginFenster extends javax.swing.JFrame {
         dispose();
         Hauptmenu run = new Hauptmenu();
         run.setVisible(true);
+        CTMData DB = new CTMData();
+        DB.usernameTrue (Benutzername.getText());
+        DB.userPasswordTrue (Passwort.getText());
         
 
-        //String pass = new String(Passwort.getPassword());
-        //DBClass DB = new DBClass();
-        //if(DB.CheckLogin(Benutzername.getText(), pass ) == true)
-        //{
-        //    System.out.print("Login bestanden");
-        //}
         
     }//GEN-LAST:event_LoginButtonActionPerformed
 

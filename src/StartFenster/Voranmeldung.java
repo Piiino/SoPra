@@ -16,6 +16,7 @@ public class Voranmeldung extends javax.swing.JFrame {
      */
     public Voranmeldung() {
         initComponents();
+        
     }
 
     
@@ -147,10 +148,13 @@ public class Voranmeldung extends javax.swing.JFrame {
         
         
         PlayerData DB = new PlayerData();
-        DB.
-         
+          DB.setPlayerFirstName(Vorname.getText());
+          DB.setPlayerLastName(Nachname.getText());
+          DB.setPlayerNickName(Nickname.getText());
+          DB.setPlayerMail(Mail.getText());
+          DB.setPlayerGender(Gender.getSelectedItem());
         
-        
+       
     }//GEN-LAST:event_BestätigenButtonActionPerformed
 
     private void GezahltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GezahltActionPerformed

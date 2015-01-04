@@ -157,6 +157,12 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
     private void AnmeldeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldeButtonActionPerformed
         
           PlayerData DB = new PlayerData();
+          DB.setPlayerFirstName(Vorname.getText());
+          DB.setPlayerLastName(Nachname.getText());
+          DB.setPlayerNickName(Nickname.getText());
+          DB.setPlayerMail(Mail.getText());
+          DB.setPlayerGender(Geschlecht.getSelectedItem());
+          
           
     }//GEN-LAST:event_AnmeldeButtonActionPerformed
 

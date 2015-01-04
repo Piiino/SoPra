@@ -5,6 +5,8 @@
  */
 package HauptFenster;
 
+import databaseController.CTMData;
+
 /**
  *
  * @author Arslantepe
@@ -225,26 +227,26 @@ public class Einstellungen extends javax.swing.JFrame {
 
     private void AdminRegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdminRegistrierenActionPerformed
         
-        DBClass DB = new DBClass();
+        CTMData DB = new CTMData();
         DB.WriteAdminToDatabase(AdminBenutzername.getText(), AdminPasswort.getText() );
     }//GEN-LAST:event_AdminRegistrierenActionPerformed
 
     private void TORegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TORegistrierenActionPerformed
         
-        DBClass DB = new DBClass();
+        CTMData DB = new CTMData();
         DB.WriteToToDatabase(TOBenutzername.getText(), TOPasswort.getText());
     }//GEN-LAST:event_TORegistrierenActionPerformed
 
     private void KartenBannenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KartenBannenButtonActionPerformed
         
-        DBClass DB = new DBClass();
+        CTMData DB = new CTMData();
         DB.WriteKartenBannenToDatabase( KarteBannen.getSelectedItem(), Kartenname.getText() );
     }//GEN-LAST:event_KartenBannenButtonActionPerformed
 
     private void SpielerBannenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpielerBannenButtonActionPerformed
         
-        DBClass DB = new DBClass();
-        DB.WriteSpielerBannenToDatabase(SpielerBannen.getSelectedIndex(), Spielername.getText());
+        CTMData DB = new CTMData();
+        DB.WriteSpielerBannenToDatabase(SpielerBannen.getSelectedItem(), Spielername.getText());
     }//GEN-LAST:event_SpielerBannenButtonActionPerformed
 
     /**

@@ -4,6 +4,10 @@ package StartFenster;
 import Login.LoginFenster;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
+import java.io.File;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 /**
  *
@@ -35,6 +39,14 @@ public class Startmenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         StartenButton.setText("Starten");
+        StartenButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                StartenButtonMouseClicked(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                StartenButtonMouseReleased(evt);
+            }
+        });
         StartenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 StartenButtonActionPerformed(evt);
@@ -42,6 +54,11 @@ public class Startmenu extends javax.swing.JFrame {
         });
 
         VoranmeldungButton.setText("Voranmeldung");
+        VoranmeldungButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                VoranmeldungButtonMouseReleased(evt);
+            }
+        });
         VoranmeldungButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VoranmeldungButtonActionPerformed(evt);
@@ -49,6 +66,11 @@ public class Startmenu extends javax.swing.JFrame {
         });
 
         NewsButton.setText("News");
+        NewsButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                NewsButtonMouseReleased(evt);
+            }
+        });
         NewsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NewsButtonActionPerformed(evt);
@@ -109,7 +131,37 @@ public class Startmenu extends javax.swing.JFrame {
         LoginFenster run = new LoginFenster();
         run.setVisible(true);
     }//GEN-LAST:event_StartenButtonActionPerformed
-    
+
+    private void StartenButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StartenButtonMouseClicked
+        
+    }//GEN-LAST:event_StartenButtonMouseClicked
+
+    private void StartenButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StartenButtonMouseReleased
+        playSound("WindowsDefault.wav");
+    }//GEN-LAST:event_StartenButtonMouseReleased
+
+    private void VoranmeldungButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VoranmeldungButtonMouseReleased
+        playSound("WindowsDefault.wav");
+    }//GEN-LAST:event_VoranmeldungButtonMouseReleased
+
+    private void NewsButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NewsButtonMouseReleased
+        playSound("WindowsDefault.wav");
+    }//GEN-LAST:event_NewsButtonMouseReleased
+    public void playSound(String soundName)
+    {
+        try 
+        {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile( ));
+            Clip clip = AudioSystem.getClip( );
+            clip.open(audioInputStream);
+            clip.start( );
+        }
+        catch(Exception ex)
+        {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace( );
+        }
+    }
     
     /**
      * @param args the command line arguments

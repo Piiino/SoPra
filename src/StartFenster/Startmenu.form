@@ -56,6 +56,8 @@
         <Property name="text" type="java.lang.String" value="Starten"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="StartenButtonMouseClicked"/>
+        <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="StartenButtonMouseReleased"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="StartenButtonActionPerformed"/>
       </Events>
     </Component>
@@ -64,6 +66,7 @@
         <Property name="text" type="java.lang.String" value="Voranmeldung"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="VoranmeldungButtonMouseReleased"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VoranmeldungButtonActionPerformed"/>
       </Events>
     </Component>
@@ -72,6 +75,7 @@
         <Property name="text" type="java.lang.String" value="News"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="NewsButtonMouseReleased"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NewsButtonActionPerformed"/>
       </Events>
     </Component>

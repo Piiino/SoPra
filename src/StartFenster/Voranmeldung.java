@@ -1,6 +1,8 @@
 
 package StartFenster;
 
+import databaseController.PlayerData;
+
 /**
  *
  * @author Saim Arslantepe
@@ -144,7 +146,7 @@ public class Voranmeldung extends javax.swing.JFrame {
     private void BestätigenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BestätigenButtonActionPerformed
         
         
-        DBClass DB = new DBClass();
+        PlayerData DB = new PlayerData();
         DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Name.getText(), Mail.getText(), Gender.getSelectedItem(), Gezahlt.isSelected());
          
         

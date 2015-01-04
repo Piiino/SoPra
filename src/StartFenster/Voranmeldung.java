@@ -23,7 +23,7 @@ public class Voranmeldung extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Name = new javax.swing.JTextField();
+        Nachname = new javax.swing.JTextField();
         Vorname = new javax.swing.JTextField();
         Nickname = new javax.swing.JTextField();
         Mail = new javax.swing.JTextField();
@@ -41,7 +41,7 @@ public class Voranmeldung extends javax.swing.JFrame {
 
         Gender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "männlich", "weiblich" }));
 
-        jLabel1.setText("Name");
+        jLabel1.setText("Nachname");
 
         jLabel2.setText("Vorname");
 
@@ -90,7 +90,7 @@ public class Voranmeldung extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(Nickname)
                             .addComponent(Vorname, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Name, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Nachname, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -111,7 +111,7 @@ public class Voranmeldung extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(Name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Nachname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
@@ -147,14 +147,14 @@ public class Voranmeldung extends javax.swing.JFrame {
         
         
         PlayerData DB = new PlayerData();
-        DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Name.getText(), Mail.getText(), Gender.getSelectedItem(), Gezahlt.isSelected());
+        DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Nachname.getText(), Mail.getText(), Gender.getSelectedItem(), Gezahlt.isSelected());
          
         
         
     }//GEN-LAST:event_BestätigenButtonActionPerformed
 
     private void GezahltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GezahltActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_GezahltActionPerformed
 
     private void AbbrechenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbbrechenButtonActionPerformed
@@ -203,7 +203,7 @@ public class Voranmeldung extends javax.swing.JFrame {
     private javax.swing.JComboBox Gender;
     private javax.swing.JCheckBox Gezahlt;
     private javax.swing.JTextField Mail;
-    private javax.swing.JTextField Name;
+    private javax.swing.JTextField Nachname;
     private javax.swing.JTextField Nickname;
     private javax.swing.JTextField Vorname;
     private javax.swing.JLabel jLabel1;

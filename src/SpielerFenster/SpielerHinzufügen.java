@@ -162,6 +162,10 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
           DB.setPlayerNickName(Nickname.getText());
           DB.setPlayerMail(Mail.getText());
           DB.setPlayerGender(Geschlecht.getSelectedItem());
+          DB.setPlayerGoT(GoT.isSelected());
+          DB.setPlayerAN(AN.isSelected());
+          DB.setPlayerLoW(LoW.isSelected());
+          DB.setPlayerStarWars(StarWars.isSelected());
           
           
     }//GEN-LAST:event_AnmeldeButtonActionPerformed

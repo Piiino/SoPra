@@ -5,6 +5,8 @@
  */
 package SpielerFenster;
 
+import databaseController.PlayerData;
+
 /**
  *
  * @author Arslantepe
@@ -154,7 +156,7 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
 
     private void AnmeldeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldeButtonActionPerformed
         
-          DBClass DB = new DBClass();
+          PlayerData DB = new PlayerData();
           DB.WriteGamerToDatabase (Vorname.getText(), Nachname.getText(), Nickname.getText(), Mail.getText(), Geschlecht.getSelectedItem(), GoT.isSelected(), AN.isSelected(), LoW.isSelected(), StarWars.isSelected() );
     }//GEN-LAST:event_AnmeldeButtonActionPerformed
 

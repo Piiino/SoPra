@@ -39,13 +39,13 @@ public class Einstellungen extends javax.swing.JFrame {
         KarteBannen = new javax.swing.JComboBox();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        Kartenname = new javax.swing.JTextField();
         KartenBannenButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         SpielerBannen = new javax.swing.JComboBox();
         jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        Spielername = new javax.swing.JTextField();
         SpielerBannenButton = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -67,8 +67,18 @@ public class Einstellungen extends javax.swing.JFrame {
         TOPasswort.setText("Passwort");
 
         AdminRegistrieren.setText("Registrieren");
+        AdminRegistrieren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AdminRegistrierenActionPerformed(evt);
+            }
+        });
 
         TORegistrieren.setText("Registrieren");
+        TORegistrieren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TORegistrierenActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Karten bannen");
 
@@ -79,6 +89,11 @@ public class Einstellungen extends javax.swing.JFrame {
         jLabel5.setText("Kartenname");
 
         KartenBannenButton.setText("Karte bannen");
+        KartenBannenButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KartenBannenButtonActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Spieler bannen");
 
@@ -89,6 +104,11 @@ public class Einstellungen extends javax.swing.JFrame {
         jLabel8.setText("Spielername");
 
         SpielerBannenButton.setText("Spieler bannen");
+        SpielerBannenButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SpielerBannenButtonActionPerformed(evt);
+            }
+        });
 
         jLabel9.setText("Spielregeln festlegen");
 
@@ -135,7 +155,7 @@ public class Einstellungen extends javax.swing.JFrame {
                                         .addComponent(jLabel5)
                                         .addGap(36, 36, 36)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Kartenname, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(KarteBannen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(40, 40, 40)
@@ -154,7 +174,7 @@ public class Einstellungen extends javax.swing.JFrame {
                                         .addGap(46, 46, 46)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(SpielerBannen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(Spielername, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,7 +226,7 @@ public class Einstellungen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Kartenname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(AdminPasswort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addGap(30, 30, 30)
@@ -232,7 +252,7 @@ public class Einstellungen extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Spielername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(SpielerBannenButton)
                 .addContainerGap(62, Short.MAX_VALUE))
@@ -241,6 +261,30 @@ public class Einstellungen extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(871, 462));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AdminRegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdminRegistrierenActionPerformed
+        
+        DBClass DB = new DBClass();
+        DB.WriteAdminToDatabase(AdminBenutzername.getText(), AdminPasswort.getText() );
+    }//GEN-LAST:event_AdminRegistrierenActionPerformed
+
+    private void TORegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TORegistrierenActionPerformed
+        
+        DBClass DB = new DBClass();
+        DB.WriteToToDatabase(TOBenutzername.getText(), TOPasswort.getText());
+    }//GEN-LAST:event_TORegistrierenActionPerformed
+
+    private void KartenBannenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KartenBannenButtonActionPerformed
+        
+        DBClass DB = new DBClass();
+        DB.WriteKartenBannenToDatabase( KarteBannen.getSelectedItem(), Kartenname.getText() );
+    }//GEN-LAST:event_KartenBannenButtonActionPerformed
+
+    private void SpielerBannenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpielerBannenButtonActionPerformed
+        
+        DBClass DB = new DBClass();
+        DB.WriteSpielerBannenToDatabase(SpielerBannen.getSelectedIndex(), Spielername.getText());
+    }//GEN-LAST:event_SpielerBannenButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -283,8 +327,10 @@ public class Einstellungen extends javax.swing.JFrame {
     private javax.swing.JButton AdminRegistrieren;
     private javax.swing.JComboBox KarteBannen;
     private javax.swing.JButton KartenBannenButton;
+    private javax.swing.JTextField Kartenname;
     private javax.swing.JComboBox SpielerBannen;
     private javax.swing.JButton SpielerBannenButton;
+    private javax.swing.JTextField Spielername;
     private javax.swing.JComboBox Spielregeln;
     private javax.swing.JTextField TOBenutzername;
     private javax.swing.JTextField TOPasswort;
@@ -300,7 +346,5 @@ public class Einstellungen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }

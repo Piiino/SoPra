@@ -33,7 +33,7 @@ public class Voranmeldung extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         Gezahlt = new javax.swing.JCheckBox();
         BestätigenButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        AbbrechenButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -63,10 +63,10 @@ public class Voranmeldung extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Abbrechen");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        AbbrechenButton.setText("Abbrechen");
+        AbbrechenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                AbbrechenButtonActionPerformed(evt);
             }
         });
 
@@ -97,8 +97,8 @@ public class Voranmeldung extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(103, 103, 103)
                         .addComponent(BestätigenButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                        .addComponent(AbbrechenButton)))
                 .addGap(0, 93, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -129,7 +129,7 @@ public class Voranmeldung extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BestätigenButton)
-                    .addComponent(jButton1))
+                    .addComponent(AbbrechenButton))
                 .addContainerGap(58, Short.MAX_VALUE))
         );
 
@@ -155,10 +155,10 @@ public class Voranmeldung extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_GezahltActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    private void AbbrechenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbbrechenButtonActionPerformed
+        
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_AbbrechenButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -196,6 +196,7 @@ public class Voranmeldung extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AbbrechenButton;
     private javax.swing.JButton BestätigenButton;
     private javax.swing.JComboBox Gender;
     private javax.swing.JCheckBox Gezahlt;
@@ -203,7 +204,6 @@ public class Voranmeldung extends javax.swing.JFrame {
     private javax.swing.JTextField Name;
     private javax.swing.JTextField Nickname;
     private javax.swing.JTextField Vorname;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

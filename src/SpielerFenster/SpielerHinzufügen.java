@@ -37,12 +37,12 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
         Nickname = new javax.swing.JTextField();
         Mail = new javax.swing.JTextField();
         Geschlecht = new javax.swing.JComboBox();
-        jButton1 = new javax.swing.JButton();
+        AbbrechenButton = new javax.swing.JButton();
+        AnmeldeButton = new javax.swing.JButton();
         GoT = new javax.swing.JCheckBox();
         AN = new javax.swing.JCheckBox();
         LoW = new javax.swing.JCheckBox();
         StarWars = new javax.swing.JCheckBox();
-        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -58,10 +58,17 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
 
         Geschlecht.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "männlich", "weiblich" }));
 
-        jButton1.setText("Anmelden");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        AbbrechenButton.setText("Abbrechen");
+        AbbrechenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                AbbrechenButtonActionPerformed(evt);
+            }
+        });
+
+        AnmeldeButton.setText("Anmelden");
+        AnmeldeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnmeldeButtonActionPerformed(evt);
             }
         });
 
@@ -72,13 +79,6 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
         LoW.setText("Lord of War");
 
         StarWars.setText("X-Wing");
-
-        jButton2.setText("Abbrechen");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,7 +103,7 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
                             .addComponent(Mail))
                         .addGap(8, 8, 8))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(AnmeldeButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -111,7 +111,7 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
                         .addComponent(StarWars, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(LoW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(GoT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jButton2))
+                    .addComponent(AbbrechenButton))
                 .addGap(65, 65, 65))
         );
         layout.setVerticalGroup(
@@ -143,8 +143,8 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
                     .addComponent(Geschlecht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(AnmeldeButton)
+                    .addComponent(AbbrechenButton))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -152,16 +152,16 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void AnmeldeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldeButtonActionPerformed
         
           DBClass DB = new DBClass();
           DB.WriteGamerToDatabase (Vorname.getText(), Nachname.getText(), Nickname.getText(), Mail.getText(), Geschlecht.getSelectedItem(), GoT.isSelected(), AN.isSelected(), LoW.isSelected(), StarWars.isSelected() );
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_AnmeldeButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+    private void AbbrechenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbbrechenButtonActionPerformed
+        
         dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_AbbrechenButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,6 +200,8 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox AN;
+    private javax.swing.JButton AbbrechenButton;
+    private javax.swing.JButton AnmeldeButton;
     private javax.swing.JComboBox Geschlecht;
     private javax.swing.JCheckBox GoT;
     private javax.swing.JCheckBox LoW;
@@ -208,8 +210,6 @@ public class SpielerHinzufügen extends javax.swing.JFrame {
     private javax.swing.JTextField Nickname;
     private javax.swing.JCheckBox StarWars;
     private javax.swing.JTextField Vorname;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

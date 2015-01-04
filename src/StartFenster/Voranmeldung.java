@@ -147,7 +147,7 @@ public class Voranmeldung extends javax.swing.JFrame {
         
         
         PlayerData DB = new PlayerData();
-        DB.WriteVoranmeldungToDatabase (Vorname.getText(), Nickname.getText(), Nachname.getText(), Mail.getText(), Gender.getSelectedItem(), Gezahlt.isSelected());
+        DB.
          
         
         
